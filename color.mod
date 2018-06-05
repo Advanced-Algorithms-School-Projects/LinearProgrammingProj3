@@ -20,9 +20,3 @@ subject to
 
 	c3 {i in 0..numNodes-1, j in 0..numNodes-1}:
 		conflicts[i,j] - edge[i,j] <= 0;
-
-	#c4 {i in 0..numNodes-1, j in 0..numNodes-1}:
-	#	conflicts[i,j] - sum{c in 0..numColors-1}color[i,c] <= 0;
-
-        #c5 {i in 0..numNodes-1, j in 0..numNodes-1}:
-	#	conflicts[i,j] - sum{c in 0..numColors-1}color[j,c] <= 0;

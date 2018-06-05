@@ -1,0 +1,8 @@
+option solver cplex;
+option cplex_options 'time=600';
+model color.mod;
+data color-dat/color12-3.dat;
+solve;
+display objective >color12-3.output;
+display conflicts >color12-3.output;
+display color >color12-3.output;
