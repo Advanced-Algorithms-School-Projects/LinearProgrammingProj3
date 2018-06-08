@@ -1,0 +1,18 @@
+Project 3 Results
+	Patrick Hanbury & Cassandra Smith
+	June 8th, 2018
+
+The goal of this project was to implement ILP formulations of the knapsack and
+graph coloring problems. The knapsack ILP formulation was done by maximizing 
+the sum of the value of selected objects and constraining the sum of the cost 
+of selected objects to be less than or equal to the cost limit. For the graph 
+coloring ILP formulation, we minimized the sum of all conflicts and set a 
+conflict to 1 if there was a edge between 2 nodes with the same color. When 
+run, the knapsack proved to solve all the given instances very fast similar to
+the previous greedy algorithm implementation and faster than the exhaustive
+algorithm. When running graph coloring, most of the instances were solved very
+fast like the greedy algorithm but some of the larger instances with fewer 
+colors were cut off at 10 minutes like the exhaustive algorithm. Less of the 
+instances were cut off at 10 minutes compared to the exhaustive algorithm. This
+proves that though the ILP implementation may be slower than the greedy 
+algorithm, it is still faster than the exhaustive algorithm.
